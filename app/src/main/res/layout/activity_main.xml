@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/calculationTextVIew"
+        android:id="@+id/calculationTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="sans-serif-light"
@@ -90,7 +90,6 @@
         style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:onClick="calculatorButtonClick"
         android:text="C"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft"

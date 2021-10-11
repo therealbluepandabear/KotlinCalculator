@@ -3,6 +3,7 @@ package com.example.kotlincalculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import com.example.kotlincalculator.databinding.ActivityMainBinding
 
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun calculatorButtonClick(view: View) {
-        Toast.makeText(this, "Hi", Toast.LENGTH_LONG).show()
+        val asButton = view as Button
+
+        if (asButton.text != "C") binding.calculationTextView.append(asButton.text) else binding.calculationTextView.text = ""
     }
 }
