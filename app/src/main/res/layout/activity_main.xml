@@ -86,10 +86,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button20"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="C"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,10 +97,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button21"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="%"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft2"
         app:layout_constraintStart_toEndOf="@+id/button20"
@@ -108,10 +108,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button22"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="√"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft3"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft2"
@@ -119,10 +119,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button23"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="+"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button22"
@@ -130,10 +130,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button24"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="-"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button22"
@@ -141,10 +141,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button28"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="3"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/button24"
         app:layout_constraintHorizontal_bias="1.0"
@@ -154,10 +154,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button29"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="2"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/button28"
         app:layout_constraintHorizontal_bias="1.0"
@@ -167,10 +167,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button30"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="4"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft"
         app:layout_constraintHorizontal_bias="1.0"
@@ -180,10 +180,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button31"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="5"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft2"
         app:layout_constraintHorizontal_bias="1.0"
@@ -193,10 +193,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button32"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="6"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft3"
         app:layout_constraintHorizontal_bias="1.0"
@@ -206,10 +206,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button33"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="9"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft3"
         app:layout_constraintHorizontal_bias="0.0"
@@ -219,10 +219,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button35"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="8"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -232,10 +232,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button36"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="7"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft"
         app:layout_constraintHorizontal_bias="0.0"
@@ -245,10 +245,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button37"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft"
         app:layout_constraintHorizontal_bias="0.0"
@@ -258,10 +258,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button38"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -271,12 +271,12 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button39"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="="
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineLeft3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft2"
         app:layout_constraintTop_toTopOf="@+id/guideline9"
@@ -284,10 +284,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button40"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="1"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guidelineLeft"
         app:layout_constraintHorizontal_bias="0.0"
@@ -297,10 +297,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button25"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="÷"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button22"
@@ -308,23 +308,13 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button26"
+        style="@style/CalculatorButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
+        android:text="×"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button22"
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button27"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="Button"
-        style="@style/CalculatorButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button22"
-        app:layout_constraintTop_toTopOf="@+id/guideline9" />
 </androidx.constraintlayout.widget.ConstraintLayout>
