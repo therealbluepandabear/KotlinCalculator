@@ -6,9 +6,15 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.example.kotlincalculator.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
+    var leftSide = ""
+    var rightSide = ""
+    var operation: Operation? = null
+    var isLeftSide = true
+    var hasReceivedResult = false
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,9 +27,72 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
+    private fun isNumeric(str: String) = str.all { it in '0'..'9' }
+
     fun calculatorButtonClick(view: View) {
         val asButton = view as Button
 
-        if (asButton.text != "C") binding.calculationTextView.append(asButton.text) else binding.calculationTextView.text = ""
+        if (hasReceivedResult) {
+            binding.calculationTextView.text = ""
+            hasReceivedResult = false
+        }
+
+        if (isNumeric(asButton.text.toString())) {
+            binding.calculationTextView.append(asButton.text)
+
+            if (isLeftSide) leftSide += asButton.text.toString()
+            else rightSide += asButton.text.toString()
+        }
+
+        when (asButton.text) {
+            "+" -> {
+                binding.calculationTextView.append(asButton.text)
+                operation = Operation.ADD
+                isLeftSide = false
+            }
+            "-" -> {
+                binding.calculationTextView.append(asButton.text)
+                operation = Operation.SUBTRACT
+                isLeftSide = false
+            }
+            "×" -> {
+                binding.calculationTextView.append(asButton.text)
+                operation = Operation.MULTIPLY
+                isLeftSide = false
+            }
+            "÷" -> {
+                binding.calculationTextView.append(asButton.text)
+                operation = Operation.DIVIDE
+                isLeftSide = false
+            }
+            "=" -> {
+                if (leftSide != "" && rightSide != "") {
+                    binding.calculationTextView.text = ""
+
+                    Snackbar.make(binding.contextView, "$leftSide $rightSide", Snackbar.LENGTH_LONG)
+                        .show()
+
+                    when (operation) {
+                        Operation.ADD -> binding.calculationTextView.text =
+                            (leftSide.toInt() + rightSide.toInt()).toString()
+                        Operation.SUBTRACT -> binding.calculationTextView.text =
+                            (leftSide.toInt() - rightSide.toInt()).toString()
+                        Operation.MULTIPLY -> binding.calculationTextView.text =
+                            (leftSide.toInt() * rightSide.toInt()).toString()
+                        Operation.DIVIDE -> binding.calculationTextView.text =
+                            (leftSide.toInt() / rightSide.toInt()).toString()
+                    }
+
+                    isLeftSide = true
+                    leftSide = ""
+                    rightSide = ""
+                    hasReceivedResult = true
+                }
+            }
+        }
     }
+}
+
+enum class Operation {
+    ADD, SUBTRACT, DIVIDE, MULTIPLY
 }
