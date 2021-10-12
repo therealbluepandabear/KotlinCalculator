@@ -74,13 +74,13 @@ class MainActivity : AppCompatActivity() {
 
                     when (operation) {
                         Operation.ADD -> binding.calculationTextView.text =
-                            (leftSide.toInt() + rightSide.toInt()).toString()
+                            (leftSide.toDouble() + rightSide.toDouble()).toString()
                         Operation.SUBTRACT -> binding.calculationTextView.text =
-                            (leftSide.toInt() - rightSide.toInt()).toString()
+                            (leftSide.toDouble() - rightSide.toDouble()).toString()
                         Operation.MULTIPLY -> binding.calculationTextView.text =
-                            (leftSide.toInt() * rightSide.toInt()).toString()
+                            (leftSide.toDouble() * rightSide.toDouble()).toString()
                         Operation.DIVIDE -> binding.calculationTextView.text =
-                            (leftSide.toInt() / rightSide.toInt()).toString()
+                            (leftSide.toDouble() / rightSide.toDouble()).toString()
                     }
 
                     isLeftSide = true
