@@ -45,6 +45,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         when (asButton.text) {
+            "C" -> {
+                leftSide = ""
+                rightSide = ""
+                binding.calculationTextView.text = ""
+            }
             "+" -> {
                 binding.calculationTextView.append(asButton.text)
                 operation = Operation.ADD
