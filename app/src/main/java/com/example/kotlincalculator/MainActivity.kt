@@ -29,6 +29,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun isNumeric(str: String) = str.all { it in '0'..'9' }
 
+    private fun clearCalculator() {
+        leftSide = ""
+        rightSide = ""
+        binding.calculationTextView.text = ""
+    }
+
     fun calculatorButtonClick(view: View) {
         val asButton = view as Button
 
@@ -45,11 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         when (asButton.text) {
-            "C" -> {
-                leftSide = ""
-                rightSide = ""
-                binding.calculationTextView.text = ""
-            }
+            "C" -> clearCalculator()
             "+" -> {
                 binding.calculationTextView.append(asButton.text)
                 operation = Operation.ADD
