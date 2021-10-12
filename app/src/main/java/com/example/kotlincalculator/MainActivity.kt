@@ -69,9 +69,6 @@ class MainActivity : AppCompatActivity() {
                 if (leftSide != "" && rightSide != "") {
                     binding.calculationTextView.text = ""
 
-                    Snackbar.make(binding.contextView, "$leftSide $rightSide", Snackbar.LENGTH_LONG)
-                        .show()
-
                     when (operation) {
                         Operation.ADD -> binding.calculationTextView.text =
                             (leftSide.toDouble() + rightSide.toDouble()).toString()
